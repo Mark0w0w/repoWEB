@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Validación</title>
+ 
+</head>
+<body>
+    <h4>TAREA #1: Validar que el nombre solo tenga letras (sin números)</h4>
+    <h4>TAREA #2: Validar que la edad esté entre 1 y 80 años</h4>
+    <h4>TAREA #3: Validar que la contraseña tenga entre 6 y 12 caracteres</h4>
+
+    <p> formulario</p>
+
+    <form id="miFormulario" action="#" method="post">
+        <!-- Nombre (TAREA #1) -->
+        <label for="nombre">Nombre:</label>
+        <input 
+            type="text" 
+            id="nombre" 
+            name="nombre" 
+            placeholder="ingrese el nomnbre"
+            pattern="^[A-Za-z]+$" 
+            title="Solo letras (no se permiten números o espacios)" 
+            required
+        >
+        <br><br>
+
+        <!-- Edad (TAREA #2) -->
+        <label for="edad">Edad:</label>
+        <input 
+            type="number" 
+            id="edad" 
+            name="edad" 
+            placeholder="ingrese la edad"
+            min="1" 
+            max="80" 
+            title="La edad debe estar entre 1 y 80" 
+            required
+        >
+        <br><br>
+
+        <!-- Contraseña (TAREA #3) -->
+        <label for="password">Contraseña:</label>
+        <input 
+            type="password" 
+            id="password" 
+            name="password"
+            placeholder="ingrese la contraseña" 
+            minlength="6" 
+            maxlength="12" 
+            title="La contraseña debe tener entre 6 y 12 caracteres" 
+            required
+        >
+        <br><br>
+
+        <!-- Hobbies -->
+        <h4>Hobbies</h4>
+        <input type="checkbox" id="musica" name="hobbies" value="musica">
+        <label for="musica">Escuchar música</label>
+        <br>
+        <input type="checkbox" id="dormir" name="hobbies" value="dormir">
+        <label for="dormir">Dormir</label>
+        <br><br>
+
+        <!-- Ubicación -->
+        <h4>Ubicación</h4>
+        <label for="dpto">¿Dónde resides?</label>
+        <select id="dpto" name="ubicacion">
+            <option value="" selected disabled>Seleccione una</option>
+            <option value="Puerto Maldonado">Puerto Maldonado</option>
+            <option value="Lima">Lima</option>
+        </select>
+        <br><br>
+
+        <!-- País -->
+        <h4>País</h4>
+        <input list="paises" name="pais" placeholder="elige el país">
+        <datalist id="paises">
+            <option value="Perukistán">
+            <option value="Argentina">
+        </datalist>
+        <br><br>
+
+        <!-- Género -->
+        <h4>Género</h4>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <br>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label>
+        <br>
+        <input type="radio" id="otro" name="genero" value="otro" checked>
+        <label for="otro">Otro</label>
+        <br><br>
+
+        <!-- Botón de envío (ahora dentro del formulario) -->
+        <button type="submit">Enviar</button>
+
+      
+
+  
+      <!-- Enlace al archivo JS externo -->
+      <!-- <script src="js/validacion.js"></script> -->
+    </form>
+
+  
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Horario de Clases</title>
+    <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 7px;
+        }
+        th {
+            background-color: navy;
+            color: white;
+        }
+        .matematica { background-color: rgb(43, 214, 226); }
+        .quimica { background-color: palegreen; }
+        .algoritmos { background-color: rgb(247, 231, 146); }
+        .poo { background-color: chartreuse; }
+        .bd1 { background-color: rgb(219, 83, 219); }
+        .introduccion { background-color: rgb(228, 171, 50); }
+        .filosofia { background-color: rgb(36, 94, 114); }
+        .comunicacion { background-color: rgb(8, 87, 87); }
+        .civica { background-color: darkorange; }
+        .almuerzo { font-weight: bold; background-color: rgb(255, 254, 254); }
+        .desarrollo { font-weight: bold; background-color: white; }
+        .aplicada {  background-color: white; }
+        .DSSL {  background-color: white; }
+        .libre { font-weight: bold; background-color: white; }
+    </style>
+</head>
+<body>
+    <h2>Horario de Clases</h2>
+    <table>
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td>07:00 - 07:59</td>
+            <td class="matematica" rowspan="2">Matemática</td>
+            <td class="quimica" rowspan="2">Química</td>
+            <td class="matematica" rowspan="2">Matemática</td>
+            <td class="comunicacion" rowspan="2">Lenguaje y Comunicación</td>
+            <td class="civica" rowspan="2">Cívica</td>
+        </tr>
+        <tr><td>08:00 - 08:59</td></tr>
+
+        <tr>
+            <td>09:00 - 09:59</td>
+            <td class="algoritmos" rowspan="2">Algoritmos</td>
+            <td class="libre" rowspan="2">Libre</td>
+            <td class="poo" rowspan="2">POO</td>
+            <td class="algoritmos" rowspan="2">Algoritmos</td>
+            <td class="bd1" rowspan="2">Base de Datos I</td>
+        </tr>
+        <tr><td>10:00 - 10:59</td></tr>
+
+
+        <tr>
+            <td>11:00 - 11:59</td>
+            <td class="bd1" rowspan="2">Base de Datos I</td>
+            <td class="introduccion" rowspan="2">Introduccion a la Informatica</td>
+            <td class="filosofia" rowspan="2">filosofia</td>
+            <td class="libre" rowspan="2">Libre</td>
+            <td class="poo" rowspan="2">POO</td>
+        </tr>
+        <tr><td>12:00 - 12:59</td></tr>
+
+       
+        <tr>
+            <td>13:00 - 13:59</td>
+            <td colspan="5" class="almuerzo">ALMUERZO</td>
+        </tr>
+
+        <tr>
+            <tr>
+                <td>14:00 - 14:59</td>
+                <td class="desarrollo" rowspan="3">desarrollo web I</td>
+                <td class="libre" rowspan="3">Libre</td>
+                <td class="libre" rowspan="6">Libre</td>
+                <td class="libre" rowspan="1">Libre</td>
+                <td class="libre" rowspan="9">Libre</td>
+            </tr>   
+            <tr>
+                <td>15:00 - 15:59</td>
+                <td class="desarrollo" rowspan="2">desarrollo web I</td>
+            </tr> 
+           
+            
+            <tr><td>16:00 - 16:59</td></tr>
+
+            <tr>
+                <tr>
+                    <td>17:00 - 17:59</td>
+                    <td class="libre" rowspan="2">Libre</td>
+                    <td class="aplicada" rowspan="2">Calidad Aplicada a SI</td>
+                    <td class="aplicada" rowspan="2">Calidad Aplicada a SI</td>
+                </tr>
+                <tr><td>18:00 - 18:59</td></tr>
+               
+
+                <tr>
+                    <tr>
+                        <td>19:00 - 19:59</td>
+                        <td class="DSSL" rowspan="2">DSSL</td>
+                        <td class="libre" rowspan="2">Libre</td>
+                        <td class="DSSL" rowspan="2">DSSL</td>
+                        <td class="libre" rowspan="2">Libre</td>
+                    </tr>
+                    <tr><td>20:00 - 20:59</td></tr>
+                  
+       
+    </table>
+</body>
+</html>
